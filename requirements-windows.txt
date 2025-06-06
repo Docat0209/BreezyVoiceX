@@ -1,6 +1,5 @@
 --extra-index-url https://download.pytorch.org/whl/cu121
 conformer==0.3.2
-deepspeed;sys_platform=='linux'
 diffusers==0.33.1
 gdown==5.2.0
 gradio==5.33.0
@@ -26,12 +25,11 @@ torchaudio==2.7.1
 wget==3.2
 fastapi==0.115.12
 fastapi-cli==0.0.7
-WeTextProcessing
 opencc-python-reimplemented==0.1.7
 g2pw==0.1.1
 pyarrow==20.0.0
 datasets
 
-https://www.modelscope.cn/models/speech_tts/speech_kantts_ttsfrd/resolve/master/ttsfrd_dependency-0.1-py3-none-any.whl
-https://www.modelscope.cn/models/speech_tts/speech_kantts_ttsfrd/resolve/master/ttsfrd-0.3.9-cp310-cp310-linux_x86_64.whl
+#pipinstallWeTextProcessing--no-deps
+
 
