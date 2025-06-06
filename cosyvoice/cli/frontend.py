@@ -26,10 +26,22 @@ try:
     import ttsfrd
     use_ttsfrd = True
 except ImportError:
-    print("failed to import ttsfrd, use WeTextProcessing instead")
-    from tn.chinese.normalizer import Normalizer as ZhNormalizer
-    from tn.english.normalizer import Normalizer as EnNormalizer
+    print("[BreezyVoiceX] Skip normalization: ttsfrd not available")
+
+    class ZhNormalizer:
+        def __init__(self, **kwargs):
+            pass
+        def normalize(self, text):
+            return text
+
+    class EnNormalizer:
+        def __init__(self, **kwargs):
+            pass
+        def normalize(self, text):
+            return text
+
     use_ttsfrd = False
+
 from cosyvoice.utils.frontend_utils import contains_chinese, replace_blank, replace_corner_mark, remove_bracket, spell_out_number, split_paragraph
 
 
