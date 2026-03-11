@@ -1,10 +1,20 @@
+[English](README.md) | [繁體中文](README.zh-TW.md)
+
 # BreezyVoiceX
 
-> Based on [BreezyVoice](https://github.com/mtkresearch/BreezyVoice) by MediaTek Labs.  
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-12.1-76B900?logo=nvidia&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-FFD21E?logo=huggingface&logoColor=black)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
-BreezyVoiceX is an enhanced version of MediaTek [BreezyVoice](https://github.com/mtkresearch/BreezyVoice), focused on usability.
+> Based on [BreezyVoice](https://github.com/mtkresearch/BreezyVoice) by MediaTek Labs.
 
-## Key Improvements
+A zero-shot voice cloning TTS system for **Taiwanese-accented Mandarin**. Give it a short audio clip of any speaker, and it generates natural speech in that voice — with phonetic control via 注音 (bopomofo).
+
+BreezyVoiceX wraps MediaTek's [BreezyVoice](https://github.com/mtkresearch/BreezyVoice) with a streamlined two-step workflow (cache speaker → synthesize), Windows support, and performance profiling. No Linux-only dependencies required.
+
+## What's Different from BreezyVoice
 - Fast zero-shot voice synthesis via prompt caching
 - Built-in time profiler for each major inference step
 - Fully runnable without Linux-only ttsfrd dependency
