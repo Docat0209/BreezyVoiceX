@@ -10,6 +10,8 @@
 
 > 基於聯發科 [BreezyVoice](https://github.com/mtkresearch/BreezyVoice)。
 
+## 什麼是 BreezyVoiceX？
+
 零樣本語音克隆 TTS 系統，專為**台灣腔中文**設計。只需一段短音訊，即可生成該說話者聲音的自然語音 — 支援注音（bopomofo）音素控制。
 
 BreezyVoiceX 封裝了聯發科的 [BreezyVoice](https://github.com/mtkresearch/BreezyVoice)，提供簡化的兩步驟流程（快取說話者 → 合成語音）、Windows 支援與效能分析工具。無需 Linux 限定的依賴套件。

@@ -10,6 +10,8 @@
 
 > Based on [BreezyVoice](https://github.com/mtkresearch/BreezyVoice) by MediaTek Labs.
 
+## What is BreezyVoiceX?
+
 A zero-shot voice cloning TTS system for **Taiwanese-accented Mandarin**. Give it a short audio clip of any speaker, and it generates natural speech in that voice — with phonetic control via 注音 (bopomofo).
 
 BreezyVoiceX wraps MediaTek's [BreezyVoice](https://github.com/mtkresearch/BreezyVoice) with a streamlined two-step workflow (cache speaker → synthesize), Windows support, and performance profiling. No Linux-only dependencies required.
